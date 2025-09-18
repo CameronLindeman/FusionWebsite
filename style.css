@@ -36,6 +36,24 @@ main {
   margin: auto;
   background: white;
 }
+/* Image classes used on index page */
+.hero-image {
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  max-width: 900px; /* allow full content width */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ccc;
+}
+.team-photo {
+  display: block;
+  margin: 0 auto 1.25rem auto;
+  max-width: 72%; /* slightly smaller than full width */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #ccc;
+}
 section { margin-bottom: 2rem; }
 footer {
   background: #333;
