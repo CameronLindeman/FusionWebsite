@@ -54,6 +54,24 @@ main {
   border-radius: 8px;
   box-shadow: 0 2px 8px #ccc;
 }
+/* Media row and divider between before/after images */
+.media-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.media-divider {
+  width: 1px;
+  background: #ddd;
+  margin: 0 0.5rem;
+  align-self: stretch;
+}
+/* Hide divider on narrow screens and stack images vertically */
+@media (max-width: 640px) {
+  .media-divider { display: none; }
+  .media-row { gap: 0.5rem; flex-direction: column; }
+}
 section { margin-bottom: 2rem; }
 footer {
   background: #333;
